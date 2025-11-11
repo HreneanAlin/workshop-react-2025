@@ -4,7 +4,6 @@ import Exercise2 from "./exercises/Exercise2";
 import Exercise3 from "./exercises/Exercise3";
 import Exercise4 from "./exercises/Exercise4";
 import Exercise5 from "./exercises/Exercise5";
-import "./App.css";
 
 type Exercise = {
   id: number;

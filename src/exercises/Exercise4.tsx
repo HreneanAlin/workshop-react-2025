@@ -63,7 +63,7 @@ const ProductList = () => {
       {products.map((product) => (
         <div key={product.id} className="border rounded p-4">
           <h3 className="font-bold">{product.name}</h3>
-          <p className="text-blue-600">${product.price}</p>
+          <p className="text-blue-600">{product.price}</p>
           <p className="text-gray-600">{product.description}</p>
           <span className="text-sm text-gray-500">{product.category}</span>
         </div>

@@ -65,7 +65,7 @@ const ProductCard = ({ name, price, description }: ProductCardProps) => {
   return (
     <div className="border rounded-lg p-4">
       <h3>{name}</h3>
-      <p className="text-blue-600 font-bold">${price}</p>
+      <p className="text-blue-600 font-bold">{price}</p>
       <p>{description}</p>
     </div>
   );
