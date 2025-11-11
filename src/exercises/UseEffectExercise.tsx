@@ -5,6 +5,11 @@ const UseEffectExercise = () => {
   const [selectedProduct, setSelectedProduct] = useState(products[0]);
   const [viewTime, setViewTime] = useState(0);
   const [viewCount, setViewCount] = useState(0);
+  const [showExample, setShowExample] = useState(false);
+
+  const handleToggleExample = () => {
+    setShowExample((prev) => !prev);
+  };
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -62,11 +67,24 @@ const UseEffectExercise = () => {
           </section>
 
           <section className="bg-blue-50 p-6 rounded-lg">
-            <h2 className="text-lg font-semibold text-gray-800 mb-4">
-              💡 Example Code Structure
-            </h2>
-            <pre className="bg-gray-800 text-green-400 p-4 rounded overflow-x-auto text-sm">
-              <code>{`import { useState, useEffect } from 'react';
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-lg font-semibold text-gray-800">
+                💡 Example Code Structure
+              </h2>
+              <button
+                onClick={handleToggleExample}
+                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
+                aria-label={
+                  showExample ? "Hide example code" : "Show example code"
+                }
+                tabIndex={0}
+              >
+                {showExample ? "Hide Example" : "Show Example"}
+              </button>
+            </div>
+            {showExample && (
+              <pre className="bg-gray-800 text-green-400 p-4 rounded overflow-x-auto text-sm">
+                <code>{`import { useState, useEffect } from 'react';
 
 // Timer effect - runs every second
 useEffect(() => {
@@ -95,7 +113,8 @@ useEffect(() => {
 useEffect(() => {
   localStorage.setItem('viewCount', viewCount.toString());
 }, [viewCount]);`}</code>
-            </pre>
+              </pre>
+            )}
           </section>
 
           <section className="bg-yellow-50 p-6 rounded-lg">

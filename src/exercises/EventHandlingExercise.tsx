@@ -4,6 +4,11 @@ import type { CartItem } from "../types";
 
 const EventHandlingExercise = () => {
   const [cart, setCart] = useState<CartItem[]>([]);
+  const [showExample, setShowExample] = useState(false);
+
+  const handleToggleExample = () => {
+    setShowExample((prev) => !prev);
+  };
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -49,11 +54,24 @@ const EventHandlingExercise = () => {
           </section>
 
           <section className="bg-blue-50 p-6 rounded-lg">
-            <h2 className="text-lg font-semibold text-gray-800 mb-4">
-              💡 Example Code Structure
-            </h2>
-            <pre className="bg-gray-800 text-green-400 p-4 rounded overflow-x-auto text-sm">
-              <code>{`const handleAddToCart = (product: Product) => {
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-lg font-semibold text-gray-800">
+                💡 Example Code Structure
+              </h2>
+              <button
+                onClick={handleToggleExample}
+                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
+                aria-label={
+                  showExample ? "Hide example code" : "Show example code"
+                }
+                tabIndex={0}
+              >
+                {showExample ? "Hide Example" : "Show Example"}
+              </button>
+            </div>
+            {showExample && (
+              <pre className="bg-gray-800 text-green-400 p-4 rounded overflow-x-auto text-sm">
+                <code>{`const handleAddToCart = (product: Product) => {
   setCart((prevCart) => {
     const existingItem = prevCart.find(
       (item) => item.product.id === product.id
@@ -75,7 +93,8 @@ const totalPrice = cart.reduce(
   (sum, item) => sum + item.product.price * item.quantity,
   0
 );`}</code>
-            </pre>
+              </pre>
+            )}
           </section>
 
           <section className="border-2 border-dashed border-gray-300 p-8 rounded-lg bg-gray-50">
