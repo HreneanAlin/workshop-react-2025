@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ComponentsExercise from "./exercises/ComponentsExercise";
 import PropsStateExercise from "./exercises/PropsStateExercise";
+import UseEffectExercise from "./exercises/UseEffectExercise";
 import EventHandlingExercise from "./exercises/EventHandlingExercise";
 import ListsKeysExercise from "./exercises/ListsKeysExercise";
 import FormsExercise from "./exercises/FormsExercise";
@@ -28,24 +29,30 @@ const exercises: Exercise[] = [
   },
   {
     id: 3,
+    title: "useEffect Hook",
+    description: "Handle side effects and lifecycle",
+    component: UseEffectExercise,
+  },
+  {
+    id: 4,
     title: "Event Handling",
     description: "Add to cart functionality",
     component: EventHandlingExercise,
   },
   {
-    id: 4,
+    id: 5,
     title: "Lists & Keys",
     description: "Display product catalog",
     component: ListsKeysExercise,
   },
   {
-    id: 5,
+    id: 6,
     title: "Forms & Controlled Components",
     description: "Create checkout form",
     component: FormsExercise,
   },
   {
-    id: 6,
+    id: 7,
     title: "React Router",
     description: "Navigation & routing",
     component: RouterExercise,
@@ -132,6 +139,7 @@ const App = () => {
             <ul className="list-disc list-inside text-gray-600 space-y-2">
               <li>ComponentsExercise.md - Components & JSX</li>
               <li>PropsStateExercise.md - Props & State</li>
+              <li>UseEffectExercise.md - useEffect Hook</li>
               <li>EventHandlingExercise.md - Event Handling</li>
               <li>ListsKeysExercise.md - Lists & Keys</li>
               <li>FormsExercise.md - Forms & Controlled Components</li>

@@ -9,7 +9,7 @@ const EventHandlingExercise = () => {
     <div className="max-w-4xl mx-auto">
       <div className="bg-white rounded-lg shadow-lg p-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">
-          Exercise 3: Event Handling
+          Exercise 4: Event Handling
         </h1>
         <p className="text-gray-600 mb-6">
           Learn to handle user interactions and update state
