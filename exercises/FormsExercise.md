@@ -1,4 +1,4 @@
-# Exercise 5: Forms & Controlled Components
+# Exercise: Forms & Controlled Components
 
 ## Learning Objectives
 

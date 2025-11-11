@@ -1,4 +1,4 @@
-# Exercise 3: Event Handling
+# Exercise: Event Handling
 
 ## Learning Objectives
 

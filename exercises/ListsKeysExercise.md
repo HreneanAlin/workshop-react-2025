@@ -1,4 +1,4 @@
-# Exercise 4: Lists & Keys
+# Exercise: Lists & Keys
 
 ## Learning Objectives
 

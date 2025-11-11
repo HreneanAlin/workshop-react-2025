@@ -1,4 +1,4 @@
-# Exercise 2: Props & State
+# Exercise: Props & State
 
 ## Learning Objectives
 

@@ -1,101 +1,10 @@
-// Example code structure - reference these when implementing your solution
-// You'll create these components in separate files or within your router setup
-
-/*
-Example Navigation Component:
-import { Link } from "react-router";
-
-const Navigation = () => {
-  return (
-    <nav className="bg-white shadow-md mb-8">
-      <div className="max-w-6xl mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          <Link
-            to="/"
-            className="text-2xl font-bold text-blue-600 hover:text-blue-700"
-          >
-            🛒 E-Commerce Store
-          </Link>
-          <div className="flex gap-4">
-            <Link to="/" className="px-4 py-2 text-gray-700 hover:text-blue-600">
-              Home
-            </Link>
-          </div>
-        </div>
-      </div>
-    </nav>
-  );
-};
-*/
-
-/*
-Example HomePage Component:
-import { Link, useNavigate } from "react-router";
-import { products } from "../data/products";
-
-const HomePage = () => {
-  const navigate = useNavigate();
-
-  const handleViewProduct = (id: number) => {
-    navigate(`/product/${id}`);
-  };
-
-  return (
-    <div className="max-w-6xl mx-auto px-4">
-      <h1 className="text-4xl font-bold text-gray-900 mb-4">
-        Welcome to Our Store
-      </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {products.map((product) => (
-          <div key={product.id} className="bg-white rounded-lg shadow-md p-6">
-            <h3 className="text-xl font-semibold">{product.name}</h3>
-            <p className="text-blue-600 font-bold">${product.price.toFixed(2)}</p>
-            <Link
-              to={`/product/${product.id}`}
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg"
-            >
-              View Details
-            </Link>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-*/
-
-/*
-Example ProductDetailPage Component:
-import { useParams, useNavigate } from "react-router";
-import { products } from "../data/products";
-
-const ProductDetailPage = () => {
-  const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
-  const product = products.find((p) => p.id === Number(id));
-
-  if (!product) {
-    return <div>Product not found</div>;
-  }
-
-  return (
-    <div className="max-w-4xl mx-auto px-4">
-      <button onClick={() => navigate(-1)}>← Back</button>
-      <h1>{product.name}</h1>
-      <p>${product.price.toFixed(2)}</p>
-      <p>{product.description}</p>
-    </div>
-  );
-};
-*/
-
 const RouterExercise = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 py-8">
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            Exercise 7: React Router - Navigation & Routing
+            Exercise: React Router - Navigation & Routing
           </h1>
           <p className="text-gray-600 mb-6">
             Learn to create multi-page applications with React Router

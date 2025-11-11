@@ -1,4 +1,4 @@
-# Exercise 1: Components & JSX
+# Exercise: Components & JSX
 
 ## Learning Objectives
 

@@ -2,6 +2,9 @@ import { useState } from "react";
 import ComponentsExercise from "./exercises/ComponentsExercise";
 import PropsStateExercise from "./exercises/PropsStateExercise";
 import UseEffectExercise from "./exercises/UseEffectExercise";
+import UseRefExercise from "./exercises/UseRefExercise";
+import UseMemoExercise from "./exercises/UseMemoExercise";
+import UseCallbackExercise from "./exercises/UseCallbackExercise";
 import EventHandlingExercise from "./exercises/EventHandlingExercise";
 import ListsKeysExercise from "./exercises/ListsKeysExercise";
 import FormsExercise from "./exercises/FormsExercise";
@@ -29,9 +32,9 @@ const exercises: Exercise[] = [
   },
   {
     id: 3,
-    title: "useEffect Hook",
-    description: "Handle side effects and lifecycle",
-    component: UseEffectExercise,
+    title: "Lists & Keys",
+    description: "Display product catalog",
+    component: ListsKeysExercise,
   },
   {
     id: 4,
@@ -41,18 +44,37 @@ const exercises: Exercise[] = [
   },
   {
     id: 5,
-    title: "Lists & Keys",
-    description: "Display product catalog",
-    component: ListsKeysExercise,
+    title: "useEffect Hook",
+    description: "Handle side effects and lifecycle",
+    component: UseEffectExercise,
   },
   {
     id: 6,
+    title: "useRef Hook",
+    description: "Access DOM elements and persist values",
+    component: UseRefExercise,
+  },
+  {
+    id: 7,
+    title: "useMemo Hook",
+    description: "Optimize expensive calculations",
+    component: UseMemoExercise,
+  },
+  {
+    id: 8,
+    title: "useCallback Hook",
+    description: "Memoize functions to prevent re-renders",
+    component: UseCallbackExercise,
+  },
+
+  {
+    id: 9,
     title: "Forms & Controlled Components",
     description: "Create checkout form",
     component: FormsExercise,
   },
   {
-    id: 7,
+    id: 10,
     title: "React Router",
     description: "Navigation & routing",
     component: RouterExercise,
@@ -140,6 +162,9 @@ const App = () => {
               <li>ComponentsExercise.md - Components & JSX</li>
               <li>PropsStateExercise.md - Props & State</li>
               <li>UseEffectExercise.md - useEffect Hook</li>
+              <li>UseRefExercise.md - useRef Hook</li>
+              <li>UseMemoExercise.md - useMemo Hook</li>
+              <li>UseCallbackExercise.md - useCallback Hook</li>
               <li>EventHandlingExercise.md - Event Handling</li>
               <li>ListsKeysExercise.md - Lists & Keys</li>
               <li>FormsExercise.md - Forms & Controlled Components</li>

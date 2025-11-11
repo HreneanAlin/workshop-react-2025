@@ -1,4 +1,4 @@
-# Exercise 3: useEffect Hook
+# Exercise: useEffect Hook
 
 ## Learning Objectives
 

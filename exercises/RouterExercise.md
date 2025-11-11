@@ -1,4 +1,4 @@
-# Exercise 6: React Router - Navigation & Routing
+# Exercise: React Router - Navigation & Routing
 
 ## Learning Objectives
 
