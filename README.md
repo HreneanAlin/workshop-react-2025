@@ -27,7 +27,7 @@ npm run dev
 
 ## 📚 Exercises
 
-This workshop includes 5 progressive exercises:
+This workshop includes 6 progressive exercises:
 
 1. **Exercise 1: Components & JSX**
 
@@ -54,19 +54,26 @@ This workshop includes 5 progressive exercises:
    - Display product catalogs
 
 5. **Exercise 5: Forms & Controlled Components**
+
    - Create controlled form inputs
    - Handle form submission
    - Validate user input
+
+6. **Exercise 6: React Router**
+   - Set up routing in React applications
+   - Create multi-page navigation
+   - Work with dynamic routes and parameters
 
 ## 📖 Exercise Instructions
 
 Detailed instructions for each exercise are available in the `exercises/` folder:
 
-- `exercises/Exercise1.md`
-- `exercises/Exercise2.md`
-- `exercises/Exercise3.md`
-- `exercises/Exercise4.md`
-- `exercises/Exercise5.md`
+- `exercises/ComponentsExercise.md`
+- `exercises/PropsStateExercise.md`
+- `exercises/EventHandlingExercise.md`
+- `exercises/ListsKeysExercise.md`
+- `exercises/FormsExercise.md`
+- `exercises/RouterExercise.md`
 
 Each markdown file contains:
 
@@ -84,11 +91,12 @@ Each markdown file contains:
 app/
 ├── src/
 │   ├── exercises/          # Exercise components
-│   │   ├── Exercise1.tsx
-│   │   ├── Exercise2.tsx
-│   │   ├── Exercise3.tsx
-│   │   ├── Exercise4.tsx
-│   │   └── Exercise5.tsx
+│   │   ├── ComponentsExercise.tsx
+│   │   ├── PropsStateExercise.tsx
+│   │   ├── EventHandlingExercise.tsx
+│   │   ├── ListsKeysExercise.tsx
+│   │   ├── FormsExercise.tsx
+│   │   └── RouterExercise.tsx
 │   ├── components/          # Reusable components (create these!)
 │   ├── data/               # Sample data
 │   │   └── products.ts
@@ -98,11 +106,12 @@ app/
 │   ├── main.tsx            # Entry point
 │   └── index.css           # Global styles
 ├── exercises/              # Exercise instructions (markdown)
-│   ├── Exercise1.md
-│   ├── Exercise2.md
-│   ├── Exercise3.md
-│   ├── Exercise4.md
-│   └── Exercise5.md
+│   ├── ComponentsExercise.md
+│   ├── PropsStateExercise.md
+│   ├── EventHandlingExercise.md
+│   ├── ListsKeysExercise.md
+│   ├── FormsExercise.md
+│   └── RouterExercise.md
 └── package.json
 ```
 
@@ -143,11 +152,12 @@ This makes the exercises practical and relatable while learning React fundamenta
 
 ## 🎓 Learning Path
 
-1. Start with basic components (Exercise 1)
-2. Add interactivity with state (Exercise 2)
-3. Handle user events (Exercise 3)
-4. Work with data lists (Exercise 4)
-5. Build forms (Exercise 5)
+1. Start with basic components (Components Exercise)
+2. Add interactivity with state (Props & State Exercise)
+3. Handle user events (Event Handling Exercise)
+4. Work with data lists (Lists & Keys Exercise)
+5. Build forms (Forms Exercise)
+6. Add routing and navigation (Router Exercise)
 
 ## 🤝 Contributing
 

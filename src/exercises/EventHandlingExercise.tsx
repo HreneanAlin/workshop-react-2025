@@ -2,7 +2,7 @@ import { useState } from "react";
 import { products } from "../data/products";
 import type { CartItem } from "../types";
 
-const Exercise3 = () => {
+const EventHandlingExercise = () => {
   const [cart, setCart] = useState<CartItem[]>([]);
 
   return (
@@ -123,4 +123,4 @@ const totalPrice = cart.reduce(
   );
 };
 
-export default Exercise3;
+export default EventHandlingExercise;

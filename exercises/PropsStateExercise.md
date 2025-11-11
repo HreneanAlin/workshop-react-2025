@@ -74,7 +74,7 @@ export default QuantitySelector;
 
 ### Step 4: Use the Component
 
-Import and use it in `Exercise2.tsx`:
+Import and use it in `PropsStateExercise.tsx`:
 
 ```typescript
 <QuantitySelector productName="Smart Watch" />
@@ -138,7 +138,7 @@ setQuantity((prevQuantity) => prevQuantity + 1);
 - [ ] Prevented quantity from going below 1
 - [ ] Displayed current quantity
 - [ ] Used Tailwind CSS for styling
-- [ ] Imported and used component in Exercise2
+- [ ] Imported and used component in PropsStateExercise
 
 ## Common Mistakes to Avoid
 

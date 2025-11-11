@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Exercise1 from "./exercises/Exercise1";
-import Exercise2 from "./exercises/Exercise2";
-import Exercise3 from "./exercises/Exercise3";
-import Exercise4 from "./exercises/Exercise4";
-import Exercise5 from "./exercises/Exercise5";
-import Exercise6 from "./exercises/Exercise6";
+import ComponentsExercise from "./exercises/ComponentsExercise";
+import PropsStateExercise from "./exercises/PropsStateExercise";
+import EventHandlingExercise from "./exercises/EventHandlingExercise";
+import ListsKeysExercise from "./exercises/ListsKeysExercise";
+import FormsExercise from "./exercises/FormsExercise";
+import RouterExercise from "./exercises/RouterExercise";
 
 type Exercise = {
   id: number;
@@ -18,37 +18,37 @@ const exercises: Exercise[] = [
     id: 1,
     title: "Components & JSX",
     description: "Create product card components",
-    component: Exercise1,
+    component: ComponentsExercise,
   },
   {
     id: 2,
     title: "Props & State",
     description: "Build a product counter",
-    component: Exercise2,
+    component: PropsStateExercise,
   },
   {
     id: 3,
     title: "Event Handling",
     description: "Add to cart functionality",
-    component: Exercise3,
+    component: EventHandlingExercise,
   },
   {
     id: 4,
     title: "Lists & Keys",
     description: "Display product catalog",
-    component: Exercise4,
+    component: ListsKeysExercise,
   },
   {
     id: 5,
     title: "Forms & Controlled Components",
     description: "Create checkout form",
-    component: Exercise5,
+    component: FormsExercise,
   },
   {
     id: 6,
     title: "React Router",
     description: "Navigation & routing",
-    component: Exercise6,
+    component: RouterExercise,
   },
 ];
 
@@ -130,12 +130,12 @@ const App = () => {
               folder for markdown files with step-by-step guides.
             </p>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
-              <li>Exercise1.md - Components & JSX</li>
-              <li>Exercise2.md - Props & State</li>
-              <li>Exercise3.md - Event Handling</li>
-              <li>Exercise4.md - Lists & Keys</li>
-              <li>Exercise5.md - Forms & Controlled Components</li>
-              <li>Exercise6.md - React Router & Navigation</li>
+              <li>ComponentsExercise.md - Components & JSX</li>
+              <li>PropsStateExercise.md - Props & State</li>
+              <li>EventHandlingExercise.md - Event Handling</li>
+              <li>ListsKeysExercise.md - Lists & Keys</li>
+              <li>FormsExercise.md - Forms & Controlled Components</li>
+              <li>RouterExercise.md - React Router & Navigation</li>
             </ul>
           </div>
         </div>

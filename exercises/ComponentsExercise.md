@@ -56,7 +56,7 @@ export default ProductCard;
 
 ### Step 4: Use the Component
 
-1. Import the component in `Exercise1.tsx`
+1. Import the component in `ComponentsExercise.tsx`
 2. Use it to display a sample product:
 
 ```typescript
@@ -100,7 +100,7 @@ export default ProductCard;
 - [ ] Component accepts name, price, and description props
 - [ ] Component displays all product information
 - [ ] Used Tailwind CSS for styling
-- [ ] Imported and used the component in Exercise1
+- [ ] Imported and used the component in ComponentsExercise
 - [ ] Component is properly exported
 
 ## Common Mistakes to Avoid

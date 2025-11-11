@@ -89,7 +89,7 @@ const ProductDetailPage = () => {
 };
 */
 
-const Exercise6 = () => {
+const RouterExercise = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 py-8">
@@ -241,4 +241,4 @@ const Exercise6 = () => {
   );
 };
 
-export default Exercise6;
+export default RouterExercise;

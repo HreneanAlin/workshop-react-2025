@@ -9,7 +9,7 @@ type FormData = {
   paymentMethod: "credit" | "debit" | "paypal";
 };
 
-const Exercise5 = () => {
+const FormsExercise = () => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -129,4 +129,4 @@ const handleSubmit = (e: React.FormEvent) => {
   );
 };
 
-export default Exercise5;
+export default FormsExercise;
