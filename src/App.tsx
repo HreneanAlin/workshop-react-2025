@@ -4,6 +4,7 @@ import Exercise2 from "./exercises/Exercise2";
 import Exercise3 from "./exercises/Exercise3";
 import Exercise4 from "./exercises/Exercise4";
 import Exercise5 from "./exercises/Exercise5";
+import Exercise6 from "./exercises/Exercise6";
 
 type Exercise = {
   id: number;
@@ -42,6 +43,12 @@ const exercises: Exercise[] = [
     title: "Forms & Controlled Components",
     description: "Create checkout form",
     component: Exercise5,
+  },
+  {
+    id: 6,
+    title: "React Router",
+    description: "Navigation & routing",
+    component: Exercise6,
   },
 ];
 
@@ -128,6 +135,7 @@ const App = () => {
               <li>Exercise3.md - Event Handling</li>
               <li>Exercise4.md - Lists & Keys</li>
               <li>Exercise5.md - Forms & Controlled Components</li>
+              <li>Exercise6.md - React Router & Navigation</li>
             </ul>
           </div>
         </div>
